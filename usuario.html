@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/usuario.css">
+  <link rel="icon" type="image/jpg" href="./assets/logo/6-removebg-preview.png"/>
+  <title>Compra de Entradas</title>
+</head>
+<body>
+  <header class="title">
+    <a href="./index.html"><img src="./assets/logo/logo_white.png" alt=""></a>
+  </header>
+
+  <div id="container">
+    <div class="form-container registro-container">
+      <form id="registroForm" class="formactive">
+        <h1 class="title" onclick="showForm('registroForm')">Registro</h1>
+        <input type="text" id="registroNombre" placeholder="Nombre" required>
+        <input type="email" id="registroEmail" placeholder="Correo electrónico" required>
+        <input type="password" id="registroPassword" placeholder="Contraseña" required>
+        <button type="button" onclick="registro()">Registrarse</button>
+      </form>
+    </div>
+    <div class="form-container login-container">
+      <form id="loginForm" class="form">
+        <h1 class="title" onclick="showForm('loginForm')">Inicio de sesión</h1>
+        <input type="email" id="loginEmail" placeholder="Correo electrónico" required>
+        <input type="password" id="loginPassword" placeholder="Contraseña" required>
+        <button type="button" onclick="login()">Iniciar sesión</button>
+      </form>
+    </div>
+  <script src="./js/usuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: 'Helios';
+    src: url('../assets/fonts/Helios.ttf');
+}
+
+:root{
+    --red: #CE5A67;
+    --footer: #F6F1EE;
+    --font1:'Kanit', sans-serif;
+    --font2: 'Helios', sans-serif;
+    --orange: #ff9503;
+    --gray: #424242;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight:900;
+    overflow-x: hidden;
+
+}
+
+.name{
+    font-family: var(--font2);
+}
+
+.ham_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.5rem;
+}
+
+.logo_ham{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin:3rem auto;
+    height: 520px;
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 25px 25px;
+}
+
+.field{
+    color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+#flylo{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/flying-lotus-banner.webp') no-repeat center center;
+    background-position: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#hics{
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    background: url('../assets/artistas/hics_bnnr.webp') no-repeat center bottom;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#simz{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/littlesimz_bnnr.jpg') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#hakim{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/hakim_bnnr.jpg') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#laroi{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/the-kid-laroi.jpg') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#cruzi{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/cruz_bnr.avif') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#hiatus{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/hiatus_bnnr.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#quevedo{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/quevedo_bnnr.jpg') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#maroon{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/maroon_bnnr.webp') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#kendrick{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/kendrick_bnnr.webp') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#erykah{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/erykah_bnnr.avif') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#yaeji{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url('../assets/artistas/yaeji_bnnr.jpg') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1.5rem;
+}
+
+.name{
+    display: flex;
+    color: #fff;
+    font-size: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+.networks{
+    margin: 0 3rem .5rem 0;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+  
+
+.redes__icon{
+    width: 50px;
+    margin: .5em;
+}
+
+.description{
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_img_white{
+    position: absolute;
+    top: 0; 
+    right:40px;
+    width: 600px;
+}
+  
+
+.content{
+    width: 100%;
+    margin: 1rem;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.logo_footer{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--footer);
+    width: 100%;
+}
+
+.footer_nl_title{
+    text-transform: uppercase;
+    color: var(--orange);
+    font-size: 1.5rem;
+    border: none;
+}
+
+#newsletter_link{
+    background-color: var(--orange);
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 5rem 0 0 5rem;
+}
+
+.footer_right{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newsletter, .redes, .terms{
+    padding: 2rem;
+}
+
+#right_arrow{
+   margin-left: .5em;
+}
+
+.sponsors{
+    margin: .5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17em;
+}
+
+.sponsor_container{
+    width: 150px;
+}
+
+.sub_opt{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.send-arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    padding: 1.4rem;
+    border-radius: 0 5rem 5rem 0;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    border-left: 1px solid var(--gray);
+}
+
+.redes_title{
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+
+.redes__icon{
+    border: 1px solid var(--gray);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.redes__icon:hover{
+    background-color: var(--orange);
+    fill: #fff;
+    border: #fff;
+}
+
+#close-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.fields {
+    display: none;
+
+}
+
+.fields.active {
+    display: flex;
+}
+
+@media only screen and (max-width: 1072px) {
+    .send-arrow{
+        margin-right:3rem;
+        width: 58px;
+    }
+
+}
+
+
+/* Media query par tablet */
+@media only screen and (max-width: 768px) {
+    .logo_responsive{
+        width: 450px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item {
+        padding: 30px 20px;
+    }
+
+    h1, h3 {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .footer{
+        flex-direction: column;
+
+    }
+
+    .footer_right{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .networks{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        border: none;
+    }
+
+    .redes{
+        border-left: none;
+        
+    }
+
+    .redes__icon{
+        margin: .5rem;
+    }
+
+    .send-arrow{
+        margin-right:3rem;
+        width: 58px;
+    }
+}
+
+@media only screen and (max-width: 1756px) {
+    .btn {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .logo_footer{
+        width: 450px;
+    }
+
+
+    .footer_nl_title{
+        font-size:1rem;
+        text-align: center;
+     }
+ 
+     #newsletter_link{
+        margin-left: 3rem;
+     }
+ 
+     .send-arrow{
+         margin-right:3rem;
+         width: 58px;
+     }
+ 
+     .footer_right{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+ 
+
+}
+
+
+@media(max-width:1200px){
+    /*Menú de navegación*/
+    #nav_menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .field{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo, .field, .nav_btn{
+        position: relative;
+        top: 5px;
+        text-decoration: none;
+        color: #fff;
+        margin: .5rem;
+        font-weight: 300;
+    }
+
+    .logo{
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .nav_btn{
+        margin: 1rem 0;
+        font-weight: 900;
+        border: 8px solid #fff;
+        background-color: #fff;
+        color: var(--red);
+        font-size:1.5rem;
+    }
+
+    .field{
+        position: relative;
+        top: 0;
+        left:0px;
+        font-size:1.5rem;
+        text-align: center;
+        
+    }
+
+    .field{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .field:hover{
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+        padding: 2rem;
+    }
+
+    .nav_btn:hover{
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+        padding: 1rem;
+    }
+
+    .logo{
+        position: relative;
+    }
+
+    .img_logo{
+        width: 100%;
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width: 584px) {
+    .btn {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .send-arrow{
+        margin-right:3rem;
+        width: 58px;
+    }
+
+}
+
+/* Media query pensado para móvil */
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+        padding: 20px 10px;
+    }
+
+    h1, h3 {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .field {
+        font-size: 1.2rem;
+        left: 50px; 
+    }
+
+    #nav_menu {
+        padding: 1rem;
+    }
+
+    .send-arrow{
+        margin-right:3rem;
+        width: 58px;
+    }
+}
+
+@media (max-width: 375px)  {
+
+  
+      .footer_nl_title{
+         font-size:1rem;
+         text-align: center;
+      }
+  
+      #newsletter_link{
+         margin-left: 3rem;
+      }
+  
+      .send-arrow{
+          margin-right:3rem;
+          width: 58px;
+      }
+  
+      .footer_right{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  
+  }
+  

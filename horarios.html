@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios</title>
+    <link rel="stylesheet" href="./css/horarios.css">
+    <link rel="icon" type="image/jpg" href="./assets/logo/6-removebg-preview.png"/>
+</head>
+<body>
+    <noscript>
+        <p>¡Atención! Su navegador no admite JavaScript o lo tiene desactivado. Algunas características de esta página pueden no funcionar correctamente.</p>
+    </noscript>
+    <nav id="nav_menu">
+        <div class="intro_logo">
+            <a href="./index.html" class="logo"><img src="./assets/logo/5-removebg-preview.png" alt="logo del fest" class="logo_img"></a>
+        </div>
+        <ul id="fields">
+            <a href="./artistas.html" class="field">Artistas</a>
+            <a href="./horarios.html" class="field">Horarios</a>
+            <a href="./tickets.html" class="field">Tickets</a>
+            <a href="./form.html" class="field">Contacto</a>           
+        </ul>
+        <div id="nav_btns">
+            <a href="./usuario.html" class="nav_btn">Registro/Login</a>
+        </div>
+    </nav>
+    <header id="music_player">
+        <figure>
+            <img src="./assets/img/bannersmall.png" alt="" >
+        </figure>
+        <div id="info">
+            <h1 id="schedule_title">Eclectic Fest '24: Artistas y Horarios</h1>
+            <input type="text" id="search" placeholder="Nombre del artista a buscar">
+            <h2 id="coincidences"  class="coincidences" onclick="goToEvento()"></p>
+            </div>
+        </div>             
+
+    </header> 
+    <section id="schedule">
+        <div class="general">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Ticket</th>
+                        <th>Imagen</th>
+                        <th colspan="2">Artista</th>
+                        <th>Hora</th>
+                        <th>Día</th>
+                        <th>¡Quiero ir!</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="act">
+                        <td rowspan="7">Viernes</td>
+                    </tr>
+                    <tr class="act">
+                        
+                        <td><img src="./assets/artistas/flying_lotus.jpg" alt="imagen del músico Flying Lotus" class="artist_table_img"></td>
+                        <td class="artists_psa" colspan="2">Flying Lotus</td>
+                        <td>17:00 - 18:15</td>
+                        <td>19/01/2024</td>
+                        <td><a href="./tickets.html" class=".cta_td">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act">
+                        <td><img src="./assets/artistas/hics.jpg" alt="imagen del grupo The Hics" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">The Hics</td>
+                        <td>18:45 - 20:00</td>
+                        <td>19/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act">
+                        <td><img src="./assets/artistas/littlesimz.webp" alt="imagen de la rapera Little Simz" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Little Simz</td>
+                        <td>20:30 - 21:45</td>
+                        <td>19/01/2024</td>
+                        <td class="atencion"><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act">
+                        <td><img src="./assets/artistas/nick_hakim.jpeg" alt="imagen del cantante Nick Hakim" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Nick Hakim</td>
+                        <td>22:15 - 23:30</td>
+                        <td>19/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act"> 
+                        <td><img src="./assets/artistas/kid.jpg" alt="imagen del cantante Kid Laroi" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">The Kid LAROI</td>
+                        <td>00:00 - 01:30</td>
+                        <td>19/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act"> 
+                        <td><img src="./assets/artistas/cruzi.webp" alt="imagen de Cruz Cafuné" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Cruz Cafune</td>
+                        <td>02:00 - 03:15</td>
+                        <td>19/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                   
+                        <td rowspan="7">Sábado</td>
+                    
+                  <tr class="act">
+                        
+                        <td><img src="./assets/artistas/hiatus_kaiyote.jpg" alt="imagen del grupo Hiatus Kaiyote" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Hiatus Kaiyote</td>
+                        <td>17:00 - 18:15</td>
+                        <td>20/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act">
+                        <td><img src="./assets/artistas/quevedo.webp" alt="imagen del cantante Quevedo" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Quevedo</td>
+                        <td>18:45 - 20:00</td>
+                        <td>20/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act">
+                        <td><img src="./assets/artistas/maroon5.jpg" alt="imagen del grupo Maroon 5" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Maroon 5</td>
+                        <td>20:30 - 21:45</td>
+                        <td>20/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act">
+                        <td><img src="./assets/artistas/kendrick.jpg" alt="imagen del rapero Kendrick Lamar" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Kendrick Lamar</td>
+                        <td>22:15 - 23:30</td>
+                        <td>20/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act">
+                        <td><img src="./assets/artistas/erykah.jpg" alt="imagen de la cantante Erykah Badu" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Erykah Badu</td>
+                        <td>00:00 - 01:30</td>
+                        <td>20/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                    <tr class="act">
+                        <td><img src="./assets/artistas/yaeji.webp" alt="imagen de la cantante Yaeji" class="artist_table_img"></td>
+                        <td class="artist_psa" colspan="2">Yaeji</td>
+                        <td>02:00 - 03:15</td>
+                        <td>20/01/2024</td>
+                        <td><a href="./tickets.html">Comprar Tickets</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="sponsors">
+          <img src="./assets/logo/4-removebg-preview.png" alt="" class="logo_footer">
+        </section>
+        <div class="footer_right">
+            <section class="newsletter">
+                <h3 class="footer_nl_title">Suscríbete a nuestro newsletter</h3>
+                <div class="sub_opt">
+                    <input href="" id="newsletter_link" placeholder="Introduce aquí tu email">
+                    <button class="footer_nl_title" onclick="suscribirse()"><img src="./assets/svg/send.svg" alt="" class="send-arrow"></button>
+                </div>
+               
+            </section>
+            <section class="networks">
+                <h3 class="redes_title">Síguenos</h3>
+                <div class="redes">
+                    <a href="https://www.instagram.com">
+                        <img src="../assets/redes/ig.svg" alt="red de instagram" class="redes__icon">
+                    </a>
+                    <a href="https://www.tiktok.com">
+                        <img src="../assets/redes/tiktok.svg" alt="red de tiktok" class="redes__icon">
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <img src="../assets/redes/x.svg" alt="red de x" class="redes__icon">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="./js/evento.js"></script>
+    <script src="./js/busqueda.js"></script>
+</body> 
+</html>

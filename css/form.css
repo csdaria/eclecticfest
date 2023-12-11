@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: 'Helios';
+    src: url('../assets/fonts/Helios.ttf');
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --red: #CE5A67;
+    --footer: #F6F1EE;
+    --font1:'Kanit', sans-serif;
+    --font2: 'Helios', sans-serif;
+    --orange: #DE8F5F;
+    --gray: #424242;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: url("../assets/img/areaPersonal-1.png") no-repeat;
+    background-size: cover;
+    font-family: 'Helios';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+   
+}
+
+
+.ham_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.5rem;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin:3rem auto;
+    height: 620px;
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 25px 25px;
+}
+
+.field{
+    color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    width: 500px;
+    height: 50px;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color:#fff;
+    text-align: center;
+}
+
+label{
+    color: #fff;
+    margin-right: 1rem; 
+}
+
+input, textarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    margin:3rem auto;
+    height: 720px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+input, textarea{
+    display: block;
+    height: 50px;
+    width: 300px;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 900;
+    color:#fff;
+}
+
+input:hover, textarea:hover{
+    background-color: #fff;
+    color: rgb(230, 3, 192);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.fields {
+    display: none;
+
+}
+
+.fields.active {
+    display: flex;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .fields {
+        height: auto; 
+        width: 80%; 
+        margin: 3rem auto;
+    }
+
+    form {
+        width: 80%; 
+        height: 800px; 
+        padding: 20px;
+
+    }
+
+    fieldset {
+        width: 100%; 
+    }
+
+    .fields.active>form{
+        margin-top: 800px;
+        transition: margin-top 0.3s ease;
+    }
+
+    .fields.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        height: auto; 
+        width: 350px; 
+        margin: 3rem auto;
+    }
+    
+    .ham_menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 1.5rem;
+        z-index: 2; 
+    }
+    
+    form {
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+
+    .fields {
+        height: auto; 
+        width: 90%; 
+        margin: 3rem auto;
+    }
+
+    form {
+        width: 90%; 
+        height: 750px; 
+        padding: 20px;
+    }
+
+    fieldset {
+        width: 100%; 
+    }
+
+
+    .fields.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        height: auto; 
+        width: 350px;
+        margin: 3rem auto;
+    }
+    
+    .ham_menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 1.5rem;
+        /*Prioridad al menú despegable*/
+        z-index: 2; 
+    }
+    
+    form {
+        /*Para que el formulario quede detrás del menú al desplegarse este último*/
+        z-index: 1; 
+    }
+}

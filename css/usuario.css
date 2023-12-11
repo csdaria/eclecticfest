@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: 'Helios';
+    src: url('../assets/fonts/Helios.ttf');
+}
+
+:root{
+    --red: #CE5A67;
+    --footer: #F6F1EE;
+    --font1:'Kanit', sans-serif;
+    --font2: 'Helios', sans-serif;
+    --orange: #ff9503;
+    --gray: #424242;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    background: url('../assets/img/night_nologos.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+
+}
+
+.title{
+    color: #fff;
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registroForm, #loginForm{
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    gap: 3em;
+    width: 500px;
+    height: 600px;
+}
+
+/* Se cambia el color del borde y sombra usando variables */
+
+#registroForm {
+    border-color: var(--orange); 
+    box-shadow: 0 0 40px var(--orange); 
+}
+
+
+#loginForm {
+    border-color: var(--red); 
+    box-shadow: 0 0 40px var(--red); 
+  
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--orange); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7d23; 
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #ff7d23;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+    gap: 3em;
+    width: 500px;
+    height: 600px;
+}
+
+/*Ajuste de tamaño del form y header*/
+
+@media (max-width: 1052px) {
+    body{
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    #container{
+        flex-direction: column;
+        
+    }
+
+    
+    #registroForm, #loginForm{
+        width: 350px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    body{
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    #container{
+        flex-direction: column;
+        
+    }
+    
+    #registroForm, #loginForm{
+        width: 250px;
+        height: 350px;
+    }
+
+}
